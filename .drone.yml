@@ -1,0 +1,4 @@
+image: registry-private.itlab.stanford.edu/itlab/dind
+
+script:
+  - dkbuild registry-private.itlab.stanford.edu/itlab/nodeapp:latest .
