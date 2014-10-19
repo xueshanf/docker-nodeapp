@@ -1,6 +1,5 @@
 image: registry-private.itlab.stanford.edu/itlab/dind
-
-script:
+#script:
     # dkbuild required -privileged
     #- dkbuild registry-private.itlab.stanford.edu/itlab/nodeapp .
 publish:
