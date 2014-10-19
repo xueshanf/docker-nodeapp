@@ -1,4 +1,12 @@
 image: registry-private.itlab.stanford.edu/itlab/dind
 
 script:
-  - dkbuild registry-private.itlab.stanford.edu/itlab/nodeapp:latest .
+    # dkbuild required -privileged
+    #- dkbuild registry-private.itlab.stanford.edu/itlab/nodeapp .
+publish:
+    docker:
+        regisgtry_host: registry-private.itlab.stanford.edu
+        image_name: itlab/nodeapp
+        push_laest: true
+        keep_builds: ture
+        custom_tag: 0.1
