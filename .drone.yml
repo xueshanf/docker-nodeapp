@@ -1,10 +1,11 @@
-image: registry-private.itlab.stanford.edu/itlab/dind
+#image: registry-private.itlab.stanford.edu/itlab/dind
 #script:
-    # dkbuild required -privileged
+    # dkbuild requires -privileged
     #- dkbuild registry-private.itlab.stanford.edu/itlab/nodeapp .
+image: registry-private.itlab.stanford.edu/itlab/dind
 publish:
     docker:
-	    docker_server: p-10-42-2-5.us-west-2.compute.internal
+	    docker_server: ip-10-42-2-5.us-west-2.compute.internal
 	    docker_port: 2375
 	    docker_version: 1.2.0
             regisgtry_host: registry-private.itlab.stanford.edu
