@@ -10,4 +10,4 @@ publish:
         image_name: registry-private.itlab.stanford.edu/itlab/nodeapp
         push_laest: true
         keep_builds: ture
-        custom_tag: 0.1
+        custom_tag: latest
