@@ -3,7 +3,11 @@ var os = require('os');
  
 var server = http.createServer(function (request, response) {
   	response.writeHead(200, {"Content-Type": "text/plain"});
-  	response.end("Hello from " + os.hostname() + "\n");
+  	response.end("Hello Pacific. I'm from AWS instance: " 
+    + process.env.INSTANCE_ID 
+    + ", container: " + os.hostname() 
+    + ", public IP: " + process.env.COREOS_PUBLIC_IPV4
+    + "\n");
 });
  
 server.listen(8000);
