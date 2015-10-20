@@ -1,12 +1,14 @@
 #FROM dockerfile/nodejs:latest
-FROM ubuntu:14.04
+FROM gliderlabs/alpine:3.1
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y curl wget nodejs
+RUN apk --update add wget nodejs
+
+#RUN apt-get update && apt-get install -y curl wget nodejs
 
 ADD ./demo /demo
 
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+#RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 VOLUME /demo
 
