@@ -1,5 +1,5 @@
 #FROM dockerfile/nodejs:latest
-FROM gliderlabs/alpine:3.1
+FROM gliderlabs/alpine:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apk --update add wget nodejs
