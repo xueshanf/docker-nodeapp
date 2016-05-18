@@ -5,10 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index', { 
 	  	title: 'Fleet Controlled Dockers Demo',
-		hello: "pacific",
+		hello: "Yosemite",
 	    container: process.env.HOSTNAME,
-	    hostip: process.env.COREOS_PUBLIC_IPV4,
-        instance: process.env.INSTANCE_ID
+	    hostip: process.env.COREOS_PUBLIC_IPV4
 	});
 });
 
