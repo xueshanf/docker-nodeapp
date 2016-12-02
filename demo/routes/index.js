@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 	  	title: 'Fleet Controlled Dockers Demo',
 		hello: "Pacific",
 	    container: process.env.HOSTNAME,
-	    hostip: process.env.COREOS_PUBLIC_IPV4
+	    hostip: process.env.HOSTIP
 	});
 });
 
