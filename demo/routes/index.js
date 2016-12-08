@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index', { 
 	  	title: 'Fleet Controlled Dockers Demo',
-		hello: "Pacific",
+		hello: "Hello!",
 	    container: process.env.HOSTNAME,
 	    hostip: process.env.HOSTIP
 	});
