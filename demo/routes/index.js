@@ -3,8 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { 
-	  	title: 'Fleet Controlled Dockers Demo',
+  res.render('index', {
+	  	title: 'Kubernetes Controlled Dockers Demo',
 		hello: "Hello!",
 	    container: process.env.HOSTNAME,
 	    hostip: process.env.HOSTIP
